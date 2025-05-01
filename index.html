@@ -7,36 +7,50 @@
   <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
     header { background: #e0f7f1; padding: 40px 20px; text-align: center; }
-    header h1 { font-size: 2.5rem; margin-bottom: 10px; }
-    header p { font-size: 1.2rem; margin-top: 0; }
+    header img { max-width: 200px; margin-bottom: 20px; }
+    header h1 { font-size: 2rem; margin: 10px 0; }
     section { padding: 40px 20px; max-width: 900px; margin: auto; background: white; margin-top: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
     h2 { color: #00795c; }
-    button.cta { background: #00795c; color: white; padding: 12px 24px; border: none; font-size: 1rem; border-radius: 4px; cursor: pointer; margin-top: 20px; }
-    .infografico { margin-top: 30px; text-align: center; }
-    footer { text-align: center; font-size: 0.9rem; color: #777; padding: 20px; }
+    .cta { background: #00795c; color: white; padding: 12px 24px; border: none; font-size: 1rem; border-radius: 4px; cursor: pointer; margin-top: 20px; text-decoration: none; display: inline-block; }
+    .img-center { text-align: center; margin-top: 30px; }
+    .img-center img { max-width: 100%; border-radius: 4px; }
+    footer { text-align: center; font-size: 0.9rem; color: #777; padding: 20px; background: #f0f0f0; margin-top: 40px; }
+    .contato { text-align: center; font-size: 1rem; margin-top: 30px; }
   </style>
 </head>
 <body>
 
   <header>
+    <img src="logo-nicair.png" alt="Logo NicAir" />
     <h1>NicAir – Tecnologia DINIC</h1>
     <p>Sem combustão. Sem vapor. Apenas saciedade com segurança.</p>
     <button class="cta" onclick="document.getElementById('saibaMais').scrollIntoView({behavior: 'smooth'})">Saiba mais</button>
   </header>
 
+  <section class="img-center">
+    <img src="nicair-dispositivo.png" alt="Dispositivo e embalagem NicAir" />
+    <p><em>Dispositivo NicAir com tecnologia limpa e controlada</em></p>
+  </section>
+
   <section id="saibaMais">
-    <h2>Como Funciona</h2>
-    <p>NicAir é um dispositivo pressurizado de inalação de nicotina ativado por pressão negativa. Ao puxar pelo bocal, uma válvula interna libera uma microdose da solução de nicotina, que se mistura com o ar ambiente através de um microorifício lateral. O resultado é uma experiência sensorial semelhante ao trago do cigarro — sem calor, sem vapor, sem resíduos.</p>
-    <div class="infografico">
-      <img src="img/explodido_nicair.png" alt="Ilustração explodida do dispositivo NicAir" width="100%" style="max-width: 500px;">
-      <p><em>Representação técnica do dispositivo e fluxo de ar + nicotina</em></p>
+    <h2>O que é o NicAir?</h2>
+    <p>O NicAir é um dispositivo pressurizado de inalação de nicotina ativado por pressão negativa. Ao puxar pelo bocal, uma válvula interna libera uma microdose da solução de nicotina, que se mistura com o ar ambiente através de um microorifício lateral. O resultado é uma experiência sensorial semelhante ao trago do cigarro — sem calor, sem vapor, sem resíduos.</p>
+    <div class="img-center">
+      <img src="internamente.png" alt="Explodido técnico do dispositivo NicAir" />
+      <p><em>Vista interna do funcionamento – válvula, cápsula pressurizada e fluxo de ar</em></p>
     </div>
   </section>
 
   <section>
     <h2>Em Breve</h2>
     <p>O protótipo final do NicAir está em fase de finalização. Com design discreto, cápsula pressurizada e selo DINIC, o produto foi pensado para unir tecnologia, controle de dose e segurança. Ideal para quem busca substituir o cigarro com responsabilidade e inovação.</p>
-    <button class="cta">Quero ser notificado</button>
+    <a class="cta" href="https://wa.me/5563999926554?text=Quero%20ser%20notificado%20sobre%20o%20lan%C3%A7amento%20do%20NicAir%20DINIC." target="_blank">Quero ser notificado</a>
+  </section>
+
+  <section class="contato">
+    <h2>Contato</h2>
+    <p>Email: <a href="mailto:contato@nicair.com.br">contato@nicair.com.br</a></p>
+    <p>Instagram: <a href="https://instagram.com/nicair.dinic" target="_blank">@nicair.dinic</a></p>
   </section>
 
   <footer>
